@@ -1,3 +1,6 @@
+翻译可参考
+https://www.tailwindcss.cn/
+https://tailwind.nodejs.cn/
 # Tailwind CSS Documentation
 
 Tailwind CSS uses [Next.js](https://nextjs.org/) for its documentation.
