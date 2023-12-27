@@ -11,10 +11,10 @@ import { ThemeSelect, ThemeToggle } from './ThemeToggle'
 function Featured() {
   return (
     <a
-      href="/blog/2023-07-18-tailwind-connect-2023-recap"
+      href="/blog/tailwindcss-v3-4"
       className="ml-3 text-xs leading-5 font-medium text-sky-600 dark:text-sky-400 bg-sky-400/10 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-sky-400/20"
     >
-      <strong className="font-semibold">Connect 2023 Recap</strong>
+      <strong className="font-semibold">Tailwind CSS v3.4</strong>
       <svg
         width="2"
         height="2"
@@ -24,7 +24,7 @@ function Featured() {
       >
         <circle cx="1" cy="1" r="1" />
       </svg>
-      <span className="ml-2">Everything that was announced at our special event</span>
+      <span className="ml-2">Dynamic viewport units, :has(), subgrid, and more</span>
       <svg
         width="3"
         height="6"
@@ -41,45 +41,6 @@ function Featured() {
         />
       </svg>
     </a>
-  )
-}
-
-function BlackFriday() {
-  return (
-    <Link
-      href="https://tailwindui.com/all-access"
-      className="ml-3 text-xs leading-5 font-medium text-white dark:text-sky-400 bg-slate-900 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-slate-700"
-    >
-      <strong className="font-semibold">Sale ends today</strong>
-      <svg
-        width="2"
-        height="2"
-        fill="currentColor"
-        aria-hidden="true"
-        className="ml-2 text-slate-400 dark:text-sky-400/70"
-      >
-        <circle cx="1" cy="1" r="1" />
-      </svg>
-      <span className="ml-2">
-        Get Tailwind UI + Refactoring UI{' '}
-        <span className="hidden min-[1320px]:inline">together</span> for over 30% off
-      </span>
-      <svg
-        width="3"
-        height="6"
-        className="ml-3 overflow-visible text-slate-300 dark:text-sky-400"
-        aria-hidden="true"
-      >
-        <path
-          d="M0 0L3 3L0 6"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </Link>
   )
 }
 
@@ -263,7 +224,7 @@ export function Header({ hasNav = false, navIsOpen, onNavToggle, title, section 
                 <Logo className="w-auto h-5" />
               </Link>
               <VersionSwitcher />
-              <BlackFriday />
+              <Featured />
               <div className="relative hidden lg:flex items-center ml-auto">
                 <nav className="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
                   <ul className="flex space-x-8">
